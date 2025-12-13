@@ -1,0 +1,10 @@
+name,type,pk
+InvoiceId,INTEGER,1
+CustomerId,INTEGER,0
+InvoiceDate,DATETIME,0
+BillingAddress,NVARCHAR(70),0
+BillingCity,NVARCHAR(40),0
+BillingState,NVARCHAR(40),0
+BillingCountry,NVARCHAR(40),0
+BillingPostalCode,NVARCHAR(10),0
+Total,"NUMERIC(10,2)",0

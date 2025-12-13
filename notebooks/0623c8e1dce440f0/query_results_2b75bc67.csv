@@ -1,0 +1,16 @@
+name,type,pk
+EmployeeId,INTEGER,1
+LastName,NVARCHAR(20),0
+FirstName,NVARCHAR(20),0
+Title,NVARCHAR(30),0
+ReportsTo,INTEGER,0
+BirthDate,DATETIME,0
+HireDate,DATETIME,0
+Address,NVARCHAR(70),0
+City,NVARCHAR(40),0
+State,NVARCHAR(40),0
+Country,NVARCHAR(40),0
+PostalCode,NVARCHAR(10),0
+Phone,NVARCHAR(24),0
+Fax,NVARCHAR(24),0
+Email,NVARCHAR(60),0

@@ -1,0 +1,7 @@
+name,sql
+MediaType,"CREATE TABLE [MediaType]
+(
+    [MediaTypeId] INTEGER  NOT NULL,
+    [Name] NVARCHAR(120),
+    CONSTRAINT [PK_MediaType] PRIMARY KEY  ([MediaTypeId])
+)"

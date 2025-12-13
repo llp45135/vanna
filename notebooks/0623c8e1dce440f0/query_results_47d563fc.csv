@@ -1,0 +1,65 @@
+table_name,column_name,data_type,key_type
+Album,AlbumId,INTEGER,PRIMARY KEY
+Album,ArtistId,INTEGER,FOREIGN KEY
+Album,Title,NVARCHAR(160),
+Artist,ArtistId,INTEGER,PRIMARY KEY
+Artist,Name,NVARCHAR(120),
+Customer,Address,NVARCHAR(70),
+Customer,City,NVARCHAR(40),
+Customer,Company,NVARCHAR(80),
+Customer,Country,NVARCHAR(40),
+Customer,CustomerId,INTEGER,PRIMARY KEY
+Customer,Email,NVARCHAR(60),
+Customer,Fax,NVARCHAR(24),
+Customer,FirstName,NVARCHAR(40),
+Customer,LastName,NVARCHAR(20),
+Customer,Phone,NVARCHAR(24),
+Customer,PostalCode,NVARCHAR(10),
+Customer,State,NVARCHAR(40),
+Customer,SupportRepId,INTEGER,FOREIGN KEY
+Employee,Address,NVARCHAR(70),
+Employee,BirthDate,DATETIME,
+Employee,City,NVARCHAR(40),
+Employee,Country,NVARCHAR(40),
+Employee,Email,NVARCHAR(60),
+Employee,EmployeeId,INTEGER,PRIMARY KEY
+Employee,Fax,NVARCHAR(24),
+Employee,FirstName,NVARCHAR(20),
+Employee,HireDate,DATETIME,
+Employee,LastName,NVARCHAR(20),
+Employee,Phone,NVARCHAR(24),
+Employee,PostalCode,NVARCHAR(10),
+Employee,ReportsTo,INTEGER,FOREIGN KEY
+Employee,State,NVARCHAR(40),
+Employee,Title,NVARCHAR(30),
+Genre,GenreId,INTEGER,PRIMARY KEY
+Genre,Name,NVARCHAR(120),
+Invoice,BillingAddress,NVARCHAR(70),
+Invoice,BillingCity,NVARCHAR(40),
+Invoice,BillingCountry,NVARCHAR(40),
+Invoice,BillingPostalCode,NVARCHAR(10),
+Invoice,BillingState,NVARCHAR(40),
+Invoice,CustomerId,INTEGER,FOREIGN KEY
+Invoice,InvoiceDate,DATETIME,
+Invoice,InvoiceId,INTEGER,PRIMARY KEY
+Invoice,Total,"NUMERIC(10,2)",
+InvoiceLine,InvoiceId,INTEGER,FOREIGN KEY
+InvoiceLine,InvoiceLineId,INTEGER,PRIMARY KEY
+InvoiceLine,Quantity,INTEGER,
+InvoiceLine,TrackId,INTEGER,FOREIGN KEY
+InvoiceLine,UnitPrice,"NUMERIC(10,2)",
+MediaType,MediaTypeId,INTEGER,PRIMARY KEY
+MediaType,Name,NVARCHAR(120),
+Playlist,Name,NVARCHAR(120),
+Playlist,PlaylistId,INTEGER,PRIMARY KEY
+PlaylistTrack,PlaylistId,INTEGER,FOREIGN KEY
+PlaylistTrack,TrackId,INTEGER,FOREIGN KEY
+Track,AlbumId,INTEGER,FOREIGN KEY
+Track,Bytes,INTEGER,
+Track,Composer,NVARCHAR(220),
+Track,GenreId,INTEGER,FOREIGN KEY
+Track,MediaTypeId,INTEGER,FOREIGN KEY
+Track,Milliseconds,INTEGER,
+Track,Name,NVARCHAR(200),
+Track,TrackId,INTEGER,PRIMARY KEY
+Track,UnitPrice,"NUMERIC(10,2)",

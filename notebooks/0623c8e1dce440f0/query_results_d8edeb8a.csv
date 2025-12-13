@@ -1,0 +1,7 @@
+sql
+"CREATE TABLE [Playlist]
+(
+    [PlaylistId] INTEGER  NOT NULL,
+    [Name] NVARCHAR(120),
+    CONSTRAINT [PK_Playlist] PRIMARY KEY  ([PlaylistId])
+)"

@@ -1,0 +1,3 @@
+name,type,pk
+ArtistId,INTEGER,1
+Name,NVARCHAR(120),0

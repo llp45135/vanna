@@ -1,0 +1,3 @@
+name,type,pk
+GenreId,INTEGER,1
+Name,NVARCHAR(120),0

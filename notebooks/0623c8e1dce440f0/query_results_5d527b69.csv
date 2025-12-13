@@ -1,0 +1,4 @@
+name,type,pk
+AlbumId,INTEGER,1
+Title,NVARCHAR(160),0
+ArtistId,INTEGER,0

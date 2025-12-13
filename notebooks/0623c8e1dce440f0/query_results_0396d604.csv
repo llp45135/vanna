@@ -1,0 +1,16 @@
+name,type,sql
+Invoice,table,"CREATE TABLE [Invoice]
+(
+    [InvoiceId] INTEGER  NOT NULL,
+    [CustomerId] INTEGER  NOT NULL,
+    [InvoiceDate] DATETIME  NOT NULL,
+    [BillingAddress] NVARCHAR(70),
+    [BillingCity] NVARCHAR(40),
+    [BillingState] NVARCHAR(40),
+    [BillingCountry] NVARCHAR(40),
+    [BillingPostalCode] NVARCHAR(10),
+    [Total] NUMERIC(10,2)  NOT NULL,
+    CONSTRAINT [PK_Invoice] PRIMARY KEY  ([InvoiceId]),
+    FOREIGN KEY ([CustomerId]) REFERENCES [Customer] ([CustomerId]) 
+		ON DELETE NO ACTION ON UPDATE NO ACTION
+)"

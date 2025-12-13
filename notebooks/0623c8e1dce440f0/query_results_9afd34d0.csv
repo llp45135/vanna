@@ -1,0 +1,7 @@
+name,sql
+Genre,"CREATE TABLE [Genre]
+(
+    [GenreId] INTEGER  NOT NULL,
+    [Name] NVARCHAR(120),
+    CONSTRAINT [PK_Genre] PRIMARY KEY  ([GenreId])
+)"

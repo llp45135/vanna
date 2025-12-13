@@ -1,0 +1,3 @@
+name,type,pk
+PlaylistId,INTEGER,1
+TrackId,INTEGER,2

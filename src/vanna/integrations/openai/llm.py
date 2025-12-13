@@ -41,6 +41,8 @@ class OpenAILlmService(LlmService):
         api_key: Optional[str] = None,
         organization: Optional[str] = None,
         base_url: Optional[str] = None,
+        max_retries: int = 5,
+        timeout: float = 120.0,
         **extra_client_kwargs: Any,
     ) -> None:
         try:
@@ -55,7 +57,11 @@ class OpenAILlmService(LlmService):
         organization = organization or os.getenv("OPENAI_ORG")
         base_url = base_url or os.getenv("OPENAI_BASE_URL")
 
-        client_kwargs: Dict[str, Any] = {**extra_client_kwargs}
+        client_kwargs: Dict[str, Any] = {
+            "max_retries": max_retries,
+            "timeout": timeout,
+            **extra_client_kwargs,
+        }
         if api_key:
             client_kwargs["api_key"] = api_key
         if organization:

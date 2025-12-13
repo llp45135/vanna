@@ -1,0 +1,6 @@
+name,type,pk
+InvoiceLineId,INTEGER,1
+InvoiceId,INTEGER,0
+TrackId,INTEGER,0
+UnitPrice,"NUMERIC(10,2)",0
+Quantity,INTEGER,0
