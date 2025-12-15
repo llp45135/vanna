@@ -54,8 +54,8 @@ class NL2DSLMixin:
             "3. ALIASING: Use meaningful aliases. For aggregations, use suffixes (e.g. '_sum', '_count', '_avg') or match the column name if unique.\n"
             "4. AGGREGATIONS: If the question implies a calculation (total, count, average), YOU MUST include an Aggregation. However, for 'List distinct' or 'Show distinct' questions, do NOT add a count aggregation unless asked.\n"
             "5. ENUMS: func must be one of [sum, avg, count, min, max, count_distinct]. op must be one of [eq, neq, gt, lt, gte, lte, in, not_in, like].\n"
-            "6. SORTING: 'Top N' implies descending sort by the metric. 'Bottom N' or 'Ascending' implies ascending.\n"
-            "7. GROUP BY: If usage a TimeGrain, ensure the time field is in 'group_by' or 'time_grains'.\n"
+            "6. SORTING: 'Top N' means ORDER BY metric DESC. 'Bottom N' or 'sorted ascending' means ORDER BY metric ASC. Do NOT use 'asc' for 'Top N'.\n"
+            "7. TIME GRAINS: When using time_grains, the 'group_by' MUST contain the TIME GRAIN ALIAS (e.g. 'year'), NOT the raw column name. Example: if time_grains has alias='year', then group_by=['year'].\n"
             "8. LIMIT: Do NOT add a 'limit' unless the user explicitly asks for it (e.g. 'Top 10', 'First 5'). Default to no limit."
         )
         

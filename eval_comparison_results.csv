@@ -1,0 +1,61 @@
+id,question,dsl_gen_success,dsl_exec_success,sql_gen_success,sql_exec_success,match_expected,methods_match,dsl_gen_time,dsl_sql,sql_gen_time,sql_sql,dsl_vs_truth,vanilla_vs_truth,dsl_vs_vanilla
+1,What is the total ticket price?,True,True,True,True,False,False,1.6870107650756836,"SELECT sum(sale_record0523.ticket_price) AS ticket_price_sum 
+FROM sale_record0523",0.6541690826416016,SELECT SUM(ticket_price) as total_ticket_price FROM sale_record0523,True,True,True
+2,Count the number of sales records,True,True,True,True,False,False,1.890467882156372,"SELECT count(sale_record0523.ticket_no) AS ticket_no_count 
+FROM sale_record0523",1.0345940589904785,SELECT COUNT(ticket_no) as record_count FROM sale_record0523,True,True,True
+3,What is the average ticket price?,True,True,True,True,False,False,1.8977100849151611,"SELECT avg(sale_record0523.ticket_price) AS avg_ticket_price 
+FROM sale_record0523",0.6502699851989746,SELECT AVG(ticket_price) as average_ticket_price FROM sale_record0523,True,True,True
+4,Show me total sales by sale mode,True,True,True,True,False,False,1.9712541103363037,"SELECT sum(sale_record0523.ticket_price) AS total_sales, sale_record0523.sale_mode 
+FROM sale_record0523 GROUP BY sale_record0523.sale_mode",0.7334091663360596,"SELECT sale_mode, SUM(ticket_price) as total_sales FROM sale_record0523 GROUP BY sale_mode",True,False,False
+5,Total sales for 'Beijing' departure station,True,True,True,True,False,False,2.2587950229644775,"SELECT sum(sale_record0523.ticket_price) AS total_sales 
+FROM sale_record0523 
+WHERE sale_record0523.from_station_name = 'Beijing'",0.759436845779419,"SELECT SUM(ticket_price) as total_sales 
+FROM sale_record0523 
+WHERE from_station_name = 'Beijing'",True,True,True
+6,Count tickets with price greater than 100,True,True,True,True,False,False,2.3055639266967773,"SELECT count(sale_record0523.ticket_no) AS ticket_count 
+FROM sale_record0523 
+WHERE sale_record0523.ticket_price > 100",0.7776858806610107,SELECT COUNT(ticket_no) FROM sale_record0523 WHERE ticket_price > 100,True,True,True
+7,Total sales by train date,True,True,True,True,False,False,2.138906240463257,"SELECT sum(sale_record0523.ticket_price) AS ticket_price_sum, sale_record0523.train_date 
+FROM sale_record0523 GROUP BY sale_record0523.train_date",0.807147741317749,"SELECT train_date, SUM(ticket_price) as total_sales FROM sale_record0523 GROUP BY train_date ORDER BY train_date",True,False,False
+8,What are the top 5 departure stations by sales?,True,True,True,True,False,False,2.287450075149536,"SELECT sum(sale_record0523.ticket_price) AS sales_sum, sale_record0523.from_station_name 
+FROM sale_record0523 GROUP BY sale_record0523.from_station_name ORDER BY sales_sum ASC
+ LIMIT 5",0.841188907623291,"SELECT from_station_name, SUM(ticket_price) as total_sales FROM sale_record0523 GROUP BY from_station_name ORDER BY total_sales DESC LIMIT 5",False,False,False
+9,Show sales where seat type is 'Hard Seat',True,True,True,True,False,False,1.9246821403503418,"SELECT * 
+FROM sale_record0523 
+WHERE sale_record0523.seat_type_code = 'Hard Seat'",0.7059280872344971,SELECT ticket_price as sales FROM sale_record0523 WHERE seat_type_code = 'Hard Seat',False,False,True
+10,Sales by window number sorted ascending,True,True,True,True,False,False,2.2643940448760986,"SELECT sum(sale_record0523.ticket_price) AS ticket_price_sum, sale_record0523.window_no 
+FROM sale_record0523 GROUP BY sale_record0523.window_no ORDER BY ticket_price_sum ASC",0.8116977214813232,"SELECT window_no, SUM(ticket_price) as sales 
+FROM sale_record0523 
+GROUP BY window_no 
+ORDER BY window_no ASC",True,False,False
+11,Count records where distance is between 100 and 500,True,True,True,True,False,False,2.560246706008911,"SELECT count(sale_record0523.ticket_no) AS count 
+FROM sale_record0523 
+WHERE sale_record0523.distance >= 100 AND sale_record0523.distance <= 500",0.7498910427093506,"SELECT COUNT(*) 
+FROM sale_record0523 
+WHERE distance BETWEEN 100 AND 500",True,True,True
+12,Total sales by year (from train_date),True,True,True,True,False,False,2.455977201461792,"SELECT strftime('%Y-01-01', sale_record0523.train_date) AS year, sum(sale_record0523.ticket_price) AS ticket_price_sum 
+FROM sale_record0523 GROUP BY strftime('%Y-01-01', sale_record0523.train_date)",0.8918073177337646,"SELECT strftime('%Y', train_date) as year, SUM(ticket_price) as total_sales FROM sale_record0523 GROUP BY year ORDER BY year",True,False,False
+13,Total sales by month (from train_date),True,True,True,True,False,False,2.444828987121582,"SELECT strftime('%Y-%m-01', sale_record0523.train_date) AS month, sum(sale_record0523.ticket_price) AS ticket_price_sum 
+FROM sale_record0523 GROUP BY strftime('%Y-%m-01', sale_record0523.train_date)",0.8590888977050781,"SELECT strftime('%Y-%m', train_date) as month, SUM(ticket_price) as total_sales FROM sale_record0523 GROUP BY month ORDER BY month",True,False,False
+14,Average ticket price by coach number,True,True,True,True,False,False,2.011641025543213,"SELECT avg(sale_record0523.ticket_price) AS ticket_price_avg, sale_record0523.coach_no 
+FROM sale_record0523 GROUP BY sale_record0523.coach_no",0.8869619369506836,"SELECT coach_no, AVG(ticket_price) as average_ticket_price 
+FROM sale_record0523 
+GROUP BY coach_no
+ORDER BY average_ticket_price DESC",True,False,False
+15,Sales for 'Shanghai' or 'Guangzhou' departure,True,True,True,True,False,False,2.6378231048583984,"SELECT sum(sale_record0523.ticket_price) AS ticket_price_sum 
+FROM sale_record0523 
+WHERE sale_record0523.from_station_name IN ('Shanghai', 'Guangzhou')",0.9041781425476074,"SELECT SUM(ticket_price) as total_sales 
+FROM sale_record0523 
+WHERE from_station_name IN ('Shanghai', 'Guangzhou')",True,True,True
+16,List distinct sale modes,True,True,True,True,False,False,1.5881400108337402,"SELECT sale_record0523.sale_mode 
+FROM sale_record0523 GROUP BY sale_record0523.sale_mode",0.6153848171234131,SELECT DISTINCT sale_mode FROM sale_record0523,True,True,True
+17,Count distinct train numbers,True,True,True,True,False,False,2.0291640758514404,"SELECT count(DISTINCT sale_record0523.train_no) AS train_no_count 
+FROM sale_record0523",0.6877570152282715,SELECT COUNT(DISTINCT train_no) FROM sale_record0523,True,True,True
+18,Sales excluding 'Online' sale mode,True,True,True,True,False,False,2.4036800861358643,"SELECT sum(sale_record0523.ticket_price) AS total_sales 
+FROM sale_record0523 
+WHERE sale_record0523.sale_mode != 'Online'",0.8125758171081543,SELECT SUM(ticket_price) as total_sales FROM sale_record0523 WHERE sale_mode != 'Online',True,True,True
+19,Max ticket price by to_station_name,True,True,True,True,False,False,2.0433712005615234,"SELECT max(sale_record0523.ticket_price) AS max_ticket_price, sale_record0523.to_station_name 
+FROM sale_record0523 GROUP BY sale_record0523.to_station_name",0.7641689777374268,"SELECT to_station_name, MAX(ticket_price) as max_price FROM sale_record0523 GROUP BY to_station_name",True,False,False
+20,Sales for train 'G1' on '2024-01-01',True,True,True,True,False,False,2.68894100189209,"SELECT sum(sale_record0523.ticket_price) AS total_sales 
+FROM sale_record0523 
+WHERE sale_record0523.train_no = 'G1' AND sale_record0523.train_date = '2024-01-01'",0.9225809574127197,SELECT SUM(ticket_price) as sales FROM sale_record0523 WHERE train_no = 'G1' AND train_date = '2024-01-01',True,True,True

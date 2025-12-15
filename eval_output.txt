@@ -1,0 +1,168 @@
+/Users/llp/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 2 validation errors for QueryDSL
+group_by.0
+  Input should be a valid string [type=string_type, input_value={'field': 'train_date', 'alias': 'train_date'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Semantic Error: No database engine found. Connect to database first or pass metadata.. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 2 validation errors for QueryDSL
+group_by.0
+  Input should be a valid string [type=string_type, input_value={'field': 'train_date', '...'year', 'alias': 'year'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+DSL Generation failed (Attempt 1): Schema Validation Error: 1 validation error for QueryDSL
+limit
+  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal. Retrying...
+Initializing Evaluator...
+Loading Golden Set: /Users/llp/opensource/vanna/tests/evaluation/../data/golden_ticket_20.jsonl
+
+[1] Q: What is the total ticket price?
+✅ PASS
+
+[2] Q: Count the number of sales records
+✅ PASS
+
+[3] Q: What is the average ticket price?
+✅ PASS
+
+[4] Q: Show me total sales by sale mode
+✅ PASS
+
+[5] Q: Total sales for 'Beijing' departure station
+✅ PASS
+
+[6] Q: Count tickets with price greater than 100
+✅ PASS
+
+[7] Q: Total sales by train date
+✅ PASS
+
+[8] Q: What are the top 5 departure stations by sales?
+Item mismatch in sorts: Expected {'field': 'total_sales', 'order': 'desc'}, Got {'field': 'sales', 'order': 'asc'}
+❌ FAIL - Semantic Mismatch
+Expected: {'table': 'sale_record0523', 'aggregates': [{'func': 'sum', 'field': 'ticket_price', 'alias': 'total_sales'}], 'group_by': ['from_station_name'], 'sorts': [{'field': 'total_sales', 'order': 'desc'}], 'limit': 5}
+Got:      {'table': 'sale_record0523', 'filters': [], 'aggregates': [{'func': 'sum', 'field': 'ticket_price', 'alias': 'sales'}], 'group_by': ['from_station_name'], 'time_grains': [], 'sorts': [{'field': 'sales', 'order': 'asc'}], 'limit': 5}
+
+[9] Q: Show sales where seat type is 'Hard Seat'
+List length mismatch at aggregates: Expected 1, Got 0
+❌ FAIL - Semantic Mismatch
+Expected: {'table': 'sale_record0523', 'aggregates': [{'func': 'sum', 'field': 'ticket_price', 'alias': 'sales'}], 'filters': [{'field': 'seat_type_code', 'op': 'eq', 'value': 'Hard Seat'}]}
+Got:      {'table': 'sale_record0523', 'filters': [{'field': 'seat_type_code', 'op': 'eq', 'value': 'Hard Seat'}], 'aggregates': [], 'group_by': [], 'time_grains': [], 'sorts': [], 'limit': 1}
+
+[10] Q: Sales by window number sorted ascending
+Item mismatch in sorts: Expected {'field': 'sales', 'order': 'asc'}, Got {'field': 'window_no', 'order': 'asc'}
+❌ FAIL - Semantic Mismatch
+Expected: {'table': 'sale_record0523', 'aggregates': [{'func': 'sum', 'field': 'ticket_price', 'alias': 'sales'}], 'group_by': ['window_no'], 'sorts': [{'field': 'sales', 'order': 'asc'}]}
+Got:      {'table': 'sale_record0523', 'filters': [], 'aggregates': [{'func': 'sum', 'field': 'ticket_price', 'alias': 'ticket_price_sum'}], 'group_by': ['window_no'], 'time_grains': [], 'sorts': [{'field': 'window_no', 'order': 'asc'}], 'limit': 1}
+
+[11] Q: Count records where distance is between 100 and 500
+Filter mismatch: Expected {'field': 'distance', 'op': 'gt', 'value': 100}, Got {'field': 'distance', 'op': 'gte', 'value': 100}
+❌ FAIL - Semantic Mismatch
+Expected: {'table': 'sale_record0523', 'aggregates': [{'func': 'count', 'field': 'ticket_no', 'alias': 'num_tickets'}], 'filters': [{'field': 'distance', 'op': 'gt', 'value': 100}, {'field': 'distance', 'op': 'lt', 'value': 500}]}
+Got:      {'table': 'sale_record0523', 'filters': [{'field': 'distance', 'op': 'gte', 'value': 100}, {'field': 'distance', 'op': 'lte', 'value': 500}], 'aggregates': [{'func': 'count', 'field': 'ticket_no', 'alias': 'count'}], 'group_by': [], 'time_grains': [], 'sorts': [], 'limit': 1}
+
+[12] Q: Total sales by year (from train_date)
+✅ PASS
+
+[13] Q: Total sales by month (from train_date)
+List length mismatch at group_by: Expected 1, Got 0
+❌ FAIL - Semantic Mismatch
+Expected: {'table': 'sale_record0523', 'aggregates': [{'func': 'sum', 'field': 'ticket_price', 'alias': 'total_sales'}], 'group_by': ['train_date'], 'time_grains': [{'field': 'train_date', 'grain': 'month', 'alias': 'month'}]}
+Got:      {'table': 'sale_record0523', 'filters': [], 'aggregates': [{'func': 'sum', 'field': 'ticket_price', 'alias': 'total_sales'}], 'group_by': [], 'time_grains': [{'field': 'train_date', 'grain': 'month', 'alias': 'month'}], 'sorts': [], 'limit': 1}
+
+[14] Q: Which coach numbers have average price above 200?
+✅ PASS
+
+[15] Q: Sales for 'Shanghai' or 'Guangzhou' departure
+✅ PASS
+
+[16] Q: List distinct sale modes
+✅ PASS
+
+[17] Q: Count distinct train numbers
+✅ PASS
+
+[18] Q: Sales excluding 'Online' sale mode
+✅ PASS
+
+[19] Q: Max ticket price by to_station_name
+✅ PASS
+
+[20] Q: Sales for train 'G1' on '2024-01-01'
+✅ PASS
+
+--- Evaluation Summary ---
+Total: 20
+Passed: 15
+Failed: 5
+Accuracy: 75.00%

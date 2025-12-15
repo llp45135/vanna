@@ -61,11 +61,16 @@ src/vanna/
     └── nl2dsl.py            # [NEW] Integration logic (Pipeline)
 
 tests/
-├── dsl/                     # [NEW] Unit tests for DSL
-│   ├── test_schema.py
-│   └── test_compiler.py
-└── integration/
-    └── test_nl2dsl_flow.py  # [NEW] End-to-end tests with ticket.db
+    ### Automated Tests
+    - [x] Unit tests for `DSLCompiler` (Schema validation, SQL generation)
+    - [x] Unit tests for `QueryDSL` (Pydantic validation)
+    - [x] Integration tests for `NL2DSLMixin` (End-to-end flow)
+    - [x] Golden Set Verification (`tests/evaluation/evaluate_golden_set.py`)
+    - [ ] Comparison Evaluation (`tests/evaluation/evaluate_comparison.py`) - Benchmarking NL2DSL vs Standard NL2SQL
+
+    ### Manual Verification
+    - [/] Review Golden Set correctness (DSL matches Question intent)
+    - [ ] Analyze differences in fail cases between DSL and SQL approaches
 ```
 
 **Structure Decision**: Created a new `dsl` package within `vanna` to isolate the semantic layer, maintaining clean separation from the existing RAG/VectorDB logic. Integration happens in `core`.
